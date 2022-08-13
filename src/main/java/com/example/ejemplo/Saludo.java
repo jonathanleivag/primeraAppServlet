@@ -16,6 +16,7 @@ public class Saludo extends HttpServlet {
         for (int i = 1; i <=6; i++) {
             out.println("<h"+i+">Hola Mundo</h"+i+">");
         }
+        out.println("<h2>"+request.getParameter("nombre")+"</h2>");
         out.println("</center></body></html>");
     }
 }
